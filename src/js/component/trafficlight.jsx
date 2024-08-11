@@ -23,7 +23,7 @@ const TraffickLight = () => {
 
     return (
         <>
-            <div className="col-12 mx-auto" id="traffickLight">
+            <div className={`col-12 mx-auto ${isPurpleVisible ? 'expand' : ''}`} id="traffickLight">
                 <div className="col-12" id="redLight">
                     <button 
                         onClick={() => changingColor("red")} 
@@ -43,14 +43,15 @@ const TraffickLight = () => {
                     </button>
                 </div>
                
-                {isPurpleVisible && (
-                    <div className="col-12" id="purpleLight">
-                        <button 
-                            onClick={() => changingColor("purple")} 
-                            style={{ backgroundColor: changeColor === "purple" ? "purple" : "white" }}>
-                        </button>
-                    </div>
-                )}
+                <div 
+                    className={`col-12 ${isPurpleVisible ? 'show' : ''}`} 
+                    id="purpleLight" 
+                    style={{ visibility: isPurpleVisible ? 'visible' : 'hidden' }}>
+                    <button 
+                        onClick={() => changingColor("purple")} 
+                        style={{ backgroundColor: changeColor === "purple" ? "purple" : "white" }}>
+                    </button>
+                </div>
             </div>
             <div className="col-12 w-25 mx-auto" id="randomButton">
                 <button 
