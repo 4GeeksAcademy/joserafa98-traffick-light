@@ -5,12 +5,16 @@
     width: 200px;
     height: 400px;
     border-radius: 15px;
+    text-align: center;
 }
 button{
     border-radius: 100px;
     width: 75%;
     height: 100px;
     margin: 3px;
+}
+button:visited{
+    box-shadow: 0 0 20px gold;
 }
 /* 
 

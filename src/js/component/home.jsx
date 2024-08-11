@@ -16,21 +16,18 @@ const Home = () => {
 		  <button 
 			onClick={() => changingColor("red")} 
 			style={{ backgroundColor: changeColor === "red" ? "red" : "white" }}>
-			Red
 		  </button>
 		</div>
 		<div className="col-12" id="yellowLight">
 		  <button 
 			onClick={() => changingColor("yellow")} 
 			style={{ backgroundColor: changeColor === "yellow" ? "yellow" : "white" }}>
-			Yellow
 		  </button>
 		</div>
 		<div className="col-12" id="greenLight">
 		  <button 
 			onClick={() => changingColor("green")} 
 			style={{ backgroundColor: changeColor === "green" ? "green" : "white" }}>
-			Green
 		  </button>
 		</div>
 		</div>
